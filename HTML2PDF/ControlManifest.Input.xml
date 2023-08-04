@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="HTML2PDFNamespace" constructor="HTML2PDF" version="2.0.1" display-name-key="HTML2PDF" description-key="HTML2PDF description" control-type="standard" >
+  <control namespace="HTML2PDFNamespace" constructor="HTML2PDF" version="3.0.1" display-name-key="HTML2PDF" description-key="HTML2PDF description" control-type="standard" >
     <property name="HTMLCode" display-name-key="HTMLCode" description-key="HTML code that will be converted to PDF" of-type="Multiple" usage="bound" required="true" />
     <resources>
       <code path="index.ts" order="1"/>

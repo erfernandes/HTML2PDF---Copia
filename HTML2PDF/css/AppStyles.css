@@ -13,6 +13,7 @@
 .pagebreak {
     clear: both;
     page-break-after: always;
+    display: none;
 }
 
 .full-table {
