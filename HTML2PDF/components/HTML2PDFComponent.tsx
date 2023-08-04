@@ -3,7 +3,7 @@ import { useRef } from 'react';
 
 import {IInputs, IOutputs} from "../generated/ManifestTypes";
 
-import ReportTemplate from './ReportTemplate';
+//import ReportTemplate from './ReportTemplate';
 
 import {useReactToPrint} from 'react-to-print';
 
@@ -19,10 +19,10 @@ const HTML2PDFComponent: React.FC<IHTML2PDFComponentProps> = ({ appContext }) =>
 
     return (
         <>
-            <div style={{ display: "none" }}>
+            {/* <div style={{ display: "none" }}>
                 <ReportTemplate htmlString={ appContext.parameters.HTMLCode.raw! } innerRef={componentRef} />                
             </div>
-            <button onClick={handlePrint}>Imprimir!</button>
+            <button onClick={handlePrint}>Imprimir!</button> */}
         </>
     );
 };

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
   <control namespace="HTML2PDFNamespace" constructor="HTML2PDF" version="3.0.1" display-name-key="HTML2PDF" description-key="HTML2PDF description" control-type="standard" >
-    <property name="HTMLCode" display-name-key="HTMLCode" description-key="HTML code that will be converted to PDF" of-type="Multiple" usage="bound" required="true" />
+    <property name="HTMLCode" display-name-key="HTML Code" description-key="HTML code that will be converted to PDF" of-type="Multiple" usage="bound" required="true" />
+    <property name="DefaultFilename" display-name-key="Default Filename" description-key="Default name of the file when it's saved" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="CustomCss" display-name-key="Custom CSS" description-key="Custom css code to be applied on the page" of-type="Multiple" usage="bound" required="true" />
+    <property name="ButtonName" display-name-key="Button Name" description-key="Name of the print button. Will be shown inside the button" of-type="SingleLine.Text" usage="bound" required="true" default-value="Imprimir" />
     <resources>
       <code path="index.ts" order="1"/>
       <css path="css/AppStyles.css" order="1" />

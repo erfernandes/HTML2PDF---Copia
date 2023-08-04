@@ -22,12 +22,13 @@ function App({ appContext }) {
     return(
         <React.Fragment>
             <ReactToPrint
-                trigger={() => <button id='btnImprimirPDF'>Imprimir</button>}
+                trigger={() => <button id='btnImprimirPDF'>{ appContext.parameters.ButtonName.raw }</button>}
                 content={() => componentRef.current}
             />
             <div className='pagebreak full-table'>
+              { document.title = appContext.parameters.DefaultFilename.raw }
               <div id="element-to-print" ref={componentRef}>
-                  { parse(appContext.parameters.HTMLCode.raw) }
+                  { parse(appContext.parameters.CustomCss.raw + appContext.parameters.HTMLCode.raw) }
               </div>
             </div>
         </React.Fragment>

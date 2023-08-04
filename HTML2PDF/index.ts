@@ -5,8 +5,7 @@ import { createRoot } from 'react-dom/client';
 
 import {IInputs, IOutputs} from "./generated/ManifestTypes";
 
-import HTML2PDFComponent from './components/HTML2PDFComponent';
-import App from  './components/HTML2PDFComponent.js';
+import App from './components/HTML2PDFComponent.js';
 
 export class HTML2PDF implements ComponentFramework.StandardControl<IInputs, IOutputs> {
 
